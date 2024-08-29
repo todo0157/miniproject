@@ -1,3 +1,7 @@
+# 엑셀 파일 A1,B1은 비워두기 내용 저장 안됩니다.
+# 전화번호 입력할 때 (-) 빠지면 안됩니다.
+# 여기서 이제 사이트에 엑셀 파일 업로드하면 바로 vrf파일 형태로 변환해주는 툴 만들기 
+
 import openpyxl
 from vobject import vCard
 
