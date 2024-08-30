@@ -1,6 +1,4 @@
 # 사이트에 올리는 거 필요함,,,!
-
-
 from flask import Flask, render_template, request, send_file
 import openpyxl
 from vobject import vCard
@@ -35,8 +33,8 @@ def upload_file():
             output = io.BytesIO()
             output.write(vcf_content.encode('utf-8'))
             output.seek(0)
-            return send_file(output, mimetype='text/vcard', 
-                            as_attachment=True, download_name='contacts.vcf')
+            return send_file(output, mimetype='text/vcard',
+                             as_attachment=True, download_name='contacts.vcf')
     return render_template('upload.html')
 
 if __name__ == '__main__':
